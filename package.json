@@ -4,6 +4,7 @@
   "description": "Pirmasis projektas apie JS (JavaScript)",
   "main": "index.js",
   "scripts": {
+    "array": "node --watch ./js/6-array.js",
     "mokinys": "node --watch ./js/6-mokinys.js",
     "reverse": "node --watch ./js/3-reverse.js",
     "if": "node --watch ./js/5-if.js",

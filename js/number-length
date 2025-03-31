@@ -1,0 +1,9 @@
+
+function numL(x) {
+    let y = x + 1;
+    let z = y - x -1;
+
+    console.log(z);
+}
+
+numL(3.3)

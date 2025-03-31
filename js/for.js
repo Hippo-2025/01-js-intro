@@ -1,0 +1,3 @@
+/*
+FOR (loop)  - ciklas
+*/

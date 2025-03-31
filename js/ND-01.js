@@ -9,9 +9,11 @@ console.log(num3);
 
 console.clear();
 
-const name1 = "Labas";
-const name2 = "Rytas";
-const name3 = "Vakaras";
+// Sukurti 3 kintamuosius su teksto tipo reikšmėmis
+
+const name1 = "Labaas";
+const name2 = "Rytaas";
+const name3 = "Vakaaaar";
 
 console.log(name1)
 console.log(name2)
@@ -96,32 +98,33 @@ console.clear();
 
 // Skaiciu palyginimai
 
-// a. Didziausias
+// a. Didziausias $ b.Maziausias
 const Didz = "didziausias";
+const Maz = "maziausias";
+
 function BiggestN (nmbr)
 {
     console.log(nmbr + ` yra ${Didz} skaicius`);
 }
 
-if((num1 > num2) && (num1 > num3)) {
+if((num1 >= num2) && (num1 >= num3)) {
 BiggestN(num1);
-} else if((num2 > num1) && (num2 > num3)) {
+} else if((num2 >= num1) && (num2 >= num3)) {
     BiggestN(num2);
     } else BiggestN(num3);
 
 // b.Maziausias
 
-const Maz = "maziausias";
 function SmallestN (nmbr)
 {
     console.log(nmbr + ` yra ${Maz} skaicius`);
 }
 
-if ((num1 < num2) && (num1 < num3)) {
+if ((num1 <= num2) && (num1 <= num3)) {
     SmallestN(num1)
-} else if ((num2 < num1) && (num2 < num3)) {
+} else if ((num2 <= num1) && (num2 <= num3)) {
         SmallestN(num2)
-    } else SmallestN(num3);
+} else SmallestN(num3);
 
 // c. & d. Ar jie lygus ar nelygus?
 
@@ -155,21 +158,98 @@ if ((num1 === num3) && (num1 < num2) ) {
 if ((num2 === num3) && (num3 < num1) ) {
     console.log(`Num2 ir Num3 yra lygus ir maziuausi`, num2)
 }
-// Išvesti teksto tipo kintamųjų ilgius
+
+console.clear();
+
+// 2. Išvesti teksto tipo kintamųjų ilgius
+
+let nameL_1 = name1.length
+let nameL_2 = name2.length
+let nameL_3 = name3.length
+console.log(nameL_1);
+console.log(nameL_2);
+console.log(nameL_3);
+
+// 3. Tarpusavyje palyginti teksto tipo kintamųjų ilgius: 
+// 3.a kuris didesnis
+
+if((nameL_1 >= nameL_2) && (nameL_1 >= nameL_3)) {
+    BiggestN(nameL_1);
+    } else if((nameL_2 >= nameL_1) && (nameL_2 >= nameL_3)) {
+        BiggestN(nameL_2);
+        } else BiggestN(nameL_3);
+
+// 3.b kuris mazesnis
+
+if ((nameL_1 <= nameL_2) && (nameL_1 <= nameL_3)) {
+    SmallestN(nameL_1)
+} else if ((nameL_2 <= nameL_1) && (nameL_2 <= nameL_3)) {
+        SmallestN(nameL_2)
+    } else SmallestN(nameL_3);
+
+// 3 c. & d. Ar jie lygus ar nelygus?
+
+if ((nameL_1!==nameL_2) && (nameL_1!==nameL_3) && (nameL_2!==nameL_3)) {
+    console.log("Visi zodziai nelygus")
+} else if (nameL_1===nameL_2) {
+        console.log(`${name1} lygus ${name2} =` + nameL_1 + " raides")
+    } else if (nameL_1===nameL_3) {
+        console.log(`${name1} lygus ${name3} =` + nameL_1 + " raides")
+        } else if (nameL_2===nameL_3) {
+            console.log(`${name2} lygus ${name3} =` + nameL_2 + " raides")
+        }
+
+// 3 e. Kuris dydesnis arba lygus
+
+if ((nameL_1 === nameL_2) && (nameL_1 > nameL_3) ) {
+    console.log(`${name1} ir ${name2} yra lygus ir didziausi`, nameL_1)
+}
+if ((nameL_1 === nameL_3) && (nameL_1 > nameL_2) ) {
+    console.log(`${name1} ir ${name3} yra lygus ir didziausi`, nameL_3)
+}
+if ((nameL_2 === nameL_3) && (nameL_3 > nameL_1) ) {
+    console.log(`${name2} ir ${name3} yra lygus ir didziausi`, nameL_2)
+}
+
+// 3 f. kuris mažesnis arba lygus
+
+if ((nameL_1 === nameL_2) && (nameL_1 < nameL_3) ) {
+    console.log(`${name1} ir ${name2} yra lygus ir maziausi `, nameL_1)
+}
+if ((nameL_1 === nameL_3) && (nameL_1 < nameL_2) ) {
+    console.log(`${name1} ir ${name3} yra lygus maziausi`, nameL_3)
+}
+if ((nameL_2 === nameL_3) && (nameL_3 < nameL_1) ) {
+    console.log(`${name2} ir ${name3} yra lygus ir maziuausi`, nameL_2)
+}
+
+
+console.clear();
+
+//  4. Išvesti sąrašo tipo kintamųjų ilgius
+
 
 function TextLen (txt)
 {
     let L0 = (txt[0]).length;
-    console.log(L0 + " ")
     let L1 = (txt[1]).length;
-    console.log(L1 + " ")
     let L2 = (txt[2]).length;
-    console.log(L2 + " ")
     let L3 = (txt[3]).length;
-    console.log(L3 + " ")
     let L4 = (txt[4]).length;
-    console.log(L4 + " ")
+
+    console.log(L0 + " " + L1 + " " + L2 + " " + L3 + " " + L4 );
 }
 TextLen(txt1);
 TextLen(txt2);
+TextLen(txt3);
+
+console.clear();
+
+
+for (let i=0; i<=20; i++) {
+        if(i%3===0) {
+            console.log(i)
+        }
+
+}
 

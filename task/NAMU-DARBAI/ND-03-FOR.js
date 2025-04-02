@@ -183,7 +183,7 @@ for (let i = 1; i <= 30; i++) {
 }
 
 // 7. Sukurkite for ciklą, kad patikrintumėte, ar skaičius yra pirminis, ir išspausdintumėte pranešimą.
-
+/*
 let pirmin = 113; 
 for (let i = 2; i <= pirmin; i++) {
     if ( i < pirmin && pirmin % i === 0 ) {
@@ -193,7 +193,28 @@ for (let i = 2; i <= pirmin; i++) {
         console.log(`Skaicius ${pirmin} yra pirminis`);
     }
 }
-
+*/
+console.clear();
 // 8. Spausdinkite pirmuosius 10 pirminių skaičių, naudodami for ciklą ir if sąlygas.
 
-function IsPrime (number) {}
+
+let PirminSk = 0;
+function IsPrime (number) 
+{
+
+    for (let i = 2; i <= number; i++) {
+        if ( i < number && number % i === 0 ) {
+            console.log(`Skaicius ${number} nera pirminis, dalinasi is ${i}`)
+            break;
+        } else if (i === number) {
+            console.log(`Skaicius ${number} yra pirminis`);
+            PirminSk++;
+            return(number);
+        }
+    }
+}
+for (let i = 0; PirminSk < 10; i++)
+{
+    IsPrime(i);
+    console.log(PirminSk);
+}

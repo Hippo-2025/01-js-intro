@@ -1,14 +1,17 @@
 function friend(friends){
     let ListL = friends.length;
     let FriendsC = 0;
-    console.log(ListL);
+    let Friends4 = [];
+    
     for (let i = 0; i < ListL; i++) {
       if (friends[i].length === 4) {
         FriendsC++;
-        console.log(friends[i]);
-    
-      }
-    }
+        Friends4 += ('"' + friends[i] + '", ')
+         }
+    } 
+    return(Friends4);
   }
 
-friend(["Ryan", "Kieran", "Jason", "Yous", "jhon"]);
+console.log(friend(["Ryan", "Kieran", "Jason", "Yous", "jhon"]));
+console.log(friend(["Peter", "Stephen", "Joe"]));
+

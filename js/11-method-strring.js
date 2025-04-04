@@ -180,7 +180,7 @@ console.log('\ntoUpperCase');
 console.log('labas'.toUpperCase());
 console.log('Labas'.toUpperCase());
 console.log('LABAS'.toUpperCase());
-console.log('5rg84 sf1s25r; 4s52af548sd'.toUpperCase());
+console.log('5rg84 sf1s25r; 4s52af548sd'.toUpperCase());fr
 
 // toLowerCase
 console.clear();

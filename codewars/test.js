@@ -3,18 +3,24 @@ let str = "a";
 let num = Number(str);
 console.log(num);
 console.log(Number.isFinite(num));
+
+
+let result = false;
+if ('a' > "b") { result = true;}
+
+console.log(result);
+
+let str ="a\n";
+let len = str.length;
+console.log(len);
 */
 
-console.log('Pomidoras'.includes('o'));
+function calcType(a, b, res) {
+console.log(a);
+console.log(b);
+console.log(res);
 
-const k = 'Kulverstukas';
-console.log(k.indexOf('u'));
-console.log(k.indexOf('u', 2));
+return('ok');
+}
 
-console.log(k.indexOf('u', k.indexOf('u') + 1));
-
-console.log(k.indexOf('s'));
-console.log(k.indexOf('s', k.indexOf('s') + 1));
-
-console.log(k.indexOf('e'));
-console.log(k.indexOf('e', k.indexOf('e') + 1));
+calcType();

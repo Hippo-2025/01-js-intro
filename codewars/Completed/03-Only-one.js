@@ -1,16 +1,11 @@
 function check(a, x) {
     let itHas = false;
     let howMany = a.length;
-    for (i = 0; i < howMany; i++) 
-    {
- //     console.log(a[i]);
-//      let num = Number(a[i]);
-        if (a[i] === x) 
-        {
+    for (i = 0; i < howMany; i++) {
+      if (a[i] === x) {
             itHas = true;
-            
-        } 
-        }
+      } 
+    }
     console.log(itHas);
     return(itHas);
   }

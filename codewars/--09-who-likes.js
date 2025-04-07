@@ -15,4 +15,14 @@ function likes(names) {
     } else if (len >= 4) {
         console.log(`${names[0]} , ${names[1]} and ${len - 2} others like this`);
     }
+    return(names);
 }
+
+/*
+
+console.log(likes([]));
+likes(['Peter']);
+likes(['Jacob', 'Alex']);
+likes(['Max', 'John', 'Mark']);
+likes(['Alex', 'Jacob', 'Mark', 'Max', 'Lils']);
+*/

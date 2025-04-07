@@ -1,21 +1,20 @@
-function likes(names) {
-    let len = names.length;
-    if(len === 0) {
-        return "no one likes this";
-    } else if (len === 1) {
-        return `${names[0]} likes this`;
-    } else if (len === 2) {
-        return `${names[0]} and ${names[1]} like this`;
-    } else if (len === 3) {
-        return `${names[0]}, ${names[1]} and ${names[2]} like this`;
-    } else {
-        return `${names[0]}, ${names[1]} and ${len - 2} others like this`;
-    }
-}
+/*
+let str = "a";
+let num = Number(str);
+console.log(num);
+console.log(Number.isFinite(num));
+*/
 
+console.log('Pomidoras'.includes('o'));
 
-console.log(likes([]));
-likes(['Peter']);
-likes(['Jacob', 'Alex']);
-likes(['Max', 'John', 'Mark']);
-likes(['Alex', 'Jacob', 'Mark', 'Max', 'Lils']);
+const k = 'Kulverstukas';
+console.log(k.indexOf('u'));
+console.log(k.indexOf('u', 2));
+
+console.log(k.indexOf('u', k.indexOf('u') + 1));
+
+console.log(k.indexOf('s'));
+console.log(k.indexOf('s', k.indexOf('s') + 1));
+
+console.log(k.indexOf('e'));
+console.log(k.indexOf('e', k.indexOf('e') + 1));

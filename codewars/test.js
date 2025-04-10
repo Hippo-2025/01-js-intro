@@ -13,7 +13,7 @@ console.log(result);
 let str ="a\n";
 let len = str.length;
 console.log(len);
-*/
+
 
 function calcType(a, b, res) {
 console.log(a);
@@ -23,4 +23,8 @@ console.log(res);
 return('ok');
 }
 
-calcType();
+*/
+
+const summer2 = 'vasara'.replace(/a/g, '');
+console.log(summer2);
+

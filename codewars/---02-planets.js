@@ -7,6 +7,7 @@ function getPlanetName(id){
         name = 'Venus'
       case 3:
         name = 'Earth'
+        break;
       case 4:
         name = 'Mars'
       case 5:
@@ -21,5 +22,6 @@ function getPlanetName(id){
     
     return name;
   }
-  getPlanetName(3);
+ console.log(getPlanetName(3));
+  
   

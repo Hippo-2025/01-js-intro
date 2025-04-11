@@ -30,4 +30,16 @@ function howmanyL(string, ltr) {
     return num; 
 }
 const text = "Parašykite funkciją, kuri apskaičiuotų kiek kartų tam tikra raidė pasikartojo žodyje arba sakinyje";
-console.log(howmanyL(text, "ar"));
+// console.log(howmanyL(text, "ar"));
+
+// Padarykite funkciją, kuri grąžintų visus skaičiaus 3 kartotinius nuo 1 iki 50
+
+function kartot3 (num, x) {
+    let answer = [];
+    for (let i = x; i <= num; i+=x) {
+        answer.push(i);
+    }
+    return answer;
+}
+ 
+console.log(kartot3(50, 3));

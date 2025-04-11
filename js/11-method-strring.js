@@ -19,7 +19,7 @@ console.log(text[text.length - 1]);
 console.log('--', text.at(0));
 console.log('--', text.at(1));
 console.log('--', text.at(2));
-console.log('--', text.at(-1));
+console.log('--', text.at(-1)); 
 console.log('--', text.at(-2));
 console.log('--', text.at(-3));
 

@@ -43,3 +43,22 @@ function kartot3 (num, x) {
 }
  
 console.log(kartot3(50, 3));
+
+// Parašykite funkciją, kuri patikrintų ar duotas žodis yra palindromas
+
+function polindromas(word) {
+    let isPolind = false;
+    let lenhalf = Math.floor(word.length/2);
+    let half1 = word.slice(0, lenhalf);
+    let half2 = word.slice(-lenhalf);
+        
+    half2 = half2.split("").reverse().join("");
+    if (half1 === half2) {
+        isPolind = true;
+    }
+
+    return isPolind;
+}
+
+console.log(polindromas("1234-321"));
+

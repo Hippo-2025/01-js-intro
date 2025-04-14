@@ -1,12 +1,14 @@
 function digit(string) {
     let result = false;
     let num = Number(string);
+    console.log(num);
+    
     if (Number.isFinite(num) === true) {
         if (num >= 0 && num <= 9 ) {
             result = true;
         }
     }
-    return(result);
+    return result;
   }
 
 

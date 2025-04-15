@@ -36,31 +36,33 @@ console.log(b);
 console.log(~~3.2);
 const x = 1.01 * 2^3
 console.log(x);
+
+console.log(isFinite(5), Number.isFinite(5));
+console.log(isFinite(-3.14), Number.isFinite(-3.14));
+console.log(isFinite(Infinity), Number.isFinite(Infinity));
+console.log(isFinite(NaN), Number.isFinite(NaN));
+console.log(isFinite('adsfdgf'), Number.isFinite('adsfdgf'));
+console.log(isFinite(true), Number.isFinite(true));
+console.log(isFinite([]), Number.isFinite([]));
+console.log(isFinite({}), Number.isFinite({}));
+
 */
 
-const userInput = '22';
-const userNumber = parseInt(userInput);
-const date = userNumber + 5;
+function buildString(...template){
+    let newstring ="";
+    for (const number of template) {
+        newstring+=number+', ';
+    }  
+    newstring = newstring.slice(0,-2);
+     
+    return `I like ${newstring}!`;
+  }
 
-console.log(date);
+console.log(buildString(1,2,3));
 
-console.log(parseInt('65'));
-console.log(parseInt('65.314'));
-console.log(parseInt('-65'));
-console.log(parseInt('-65.314'));
+// sols
 
-console.log(parseInt('labas'));
-console.log(parseInt('labas111'));
-console.log(parseInt('222labas'));
-console.log(parseInt('222labas333'));
-console.log(parseInt('222la444bas333'));
-console.log(parseInt('2,5'));
-console.log(parseInt('2.5'));
-
-console.log(parseInt(true));
-
-console.log(parseInt('222labas333'.replace('labas', '')));
-console.log(parseInt('222333'));
-
-console.log(parseInt('222labas333'.split('labas')));
-console.log(parseInt(['222', '333']));
+function buildString2(...template){
+    return `I like ${template.join(', ')}!`;
+  }
+  console.log(buildString2('Cheese','Milk','Chocolate'));

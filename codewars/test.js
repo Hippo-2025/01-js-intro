@@ -36,27 +36,31 @@ console.log(b);
 console.log(~~3.2);
 const x = 1.01 * 2^3
 console.log(x);
-
 */
-const default7 = Array(7).fill(99);
-console.log(default7);
 
+const userInput = '22';
+const userNumber = parseInt(userInput);
+const date = userNumber + 5;
 
-function replicate(times, number) {
-    if (times < 0) {
-        count = 0;
-    } else {
-        count = times;
-    }
-	const msv = Array(count).fill(number);
-    return msv;
-}
+console.log(date);
 
-console.log(replicate(3,5));
-console.log(replicate(-1,12));
+console.log(parseInt('65'));
+console.log(parseInt('65.314'));
+console.log(parseInt('-65'));
+console.log(parseInt('-65.314'));
 
-function booleanToString(b){
-    return Array(1).fill(b+'');
-  }
+console.log(parseInt('labas'));
+console.log(parseInt('labas111'));
+console.log(parseInt('222labas'));
+console.log(parseInt('222labas333'));
+console.log(parseInt('222la444bas333'));
+console.log(parseInt('2,5'));
+console.log(parseInt('2.5'));
 
-  console.log(booleanToString(NaN));
+console.log(parseInt(true));
+
+console.log(parseInt('222labas333'.replace('labas', '')));
+console.log(parseInt('222333'));
+
+console.log(parseInt('222labas333'.split('labas')));
+console.log(parseInt(['222', '333']));

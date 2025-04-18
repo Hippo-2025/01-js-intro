@@ -34,7 +34,7 @@ function evalObject(value){
     '/': (a, b) => a / b,
     '*': (a, b) => a * b,
     '%': (a, b) => a % b,
-    '^': Math.pow,              // ???
+    '^': Math.pow,  // ???
   }
   
-  let evalObject = o => ops[o.operation](o.a, o.b)
+  let evalObject = o => ops[o.operation](o.a, o.b) //???

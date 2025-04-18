@@ -46,7 +46,7 @@ console.log(isFinite(true), Number.isFinite(true));
 console.log(isFinite([]), Number.isFinite([]));
 console.log(isFinite({}), Number.isFinite({}));
 
-*/
+
 
 function buildString(...template){
     let newstring ="";
@@ -66,3 +66,90 @@ function buildString2(...template){
     return `I like ${template.join(', ')}!`;
   }
   console.log(buildString2('Cheese','Milk','Chocolate'));
+
+
+function polindromas(word) {
+    let isPolind = false;
+    let lenhalf = Math.floor(word.length/2);
+    let half1 = word.slice(0, lenhalf);
+    let half2 = word.slice(-lenhalf);
+        
+    half2 = half2.split("").reverse().join("");
+    if (half1 === half2) {
+        isPolind = true;
+    }
+
+    return isPolind;
+}
+
+console.log(polindromas("12345__54321"));
+
+// slice
+console.clear();
+console.log('\nslice');
+
+console.log('pomidoras'.slice());
+console.log('pomidoras'.slice(0));
+console.log('pomidoras'.slice(1));
+console.log('pomidoras'.slice(2));
+console.log('pomidoras'.slice(3));
+
+console.log('Teatras'.slice(1, 7));
+console.log('pomidoras'.slice(0, 2));
+console.log('pomidoras'.slice(0, 3));
+console.log('pomidoras'.slice(1, 3));
+
+console.log('pomidoras'.slice(0, -1));
+console.log('pomidoras'.slice(0, -2));
+console.log('pomidoras'.slice(0, -3));
+console.log('pomidoras'.slice(3, -3));
+
+console.log('pomidoras'.slice(-4));
+console.log('pomidoras'.slice(-6, -2));
+*/
+
+function sum(a, b) {
+    return a+b;
+}
+/*
+let ops = {                           // ???
+    '+': sum,
+    '-': (a, b) => a - b,
+    '/': (a, b) => a / b,
+    '*': (a, b) => a * b,
+    '%': (a, b) => a % b,
+    '^': Math.pow,  // ???
+  }
+  
+  let evalObject = o => ops[o.operation](o.a, o.b) //???
+  
+  console.log(ops['^'](2,3));
+
+class Math{
+    pow (a, b) {
+return a ** b;
+    }
+} 
+let tet = 0;
+    switch (tet) {
+        case 0: return 0;
+        case 1: return 40;
+        case 2: return 100;           
+        case 3: return 300;           
+        case 4: return 1200;
+    }
+console.log(tet(3));
+
+*/
+
+function checkForFactor (base, factor) {
+    return !(base%factor);
+  }
+
+  console.log(checkForFactor(10,2))
+  console.log(checkForFactor(63,7))
+  
+  console.log(checkForFactor(9,2))
+  console.log(checkForFactor(653,7))
+
+

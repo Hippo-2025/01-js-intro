@@ -9,7 +9,7 @@ function faktorial(n) {
 }
 
 console.log(faktorial(6));
-*/
+
 // 2. Parašykite funkciją, kuri apskaičiuotų kiek kartų tam tikra raidė pasikartojo žodyje arba sakinyje
  
 function howmanyL(string, ltr) {
@@ -43,7 +43,7 @@ function kartot3 (num, x) {
 }
  
 console.log(kartot3(50, 3));
-
+*/
 // Parašykite funkciją, kuri patikrintų ar duotas žodis yra palindromas
 
 function polindromas(word) {
@@ -60,5 +60,5 @@ function polindromas(word) {
     return isPolind;
 }
 
-console.log(polindromas("1234-321"));
+console.log(polindromas(""));
 

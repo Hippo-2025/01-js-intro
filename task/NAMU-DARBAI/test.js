@@ -1,7 +1,7 @@
 
 
 // console.log('Pomidoras'.indexOf('z'));
-
+/*
 let t = 'Pomidoras';
 console.log(t.indexOf('m'));
 console.log(t.slice(3));
@@ -46,4 +46,8 @@ console.log(sentenceCount);
 
 console.log('pomidoras'.split('dor'));
 console.log('ananasas'.split('na'));
+*/
+
+const b = 1 ? 2 : 3;
+console.log(b);
 

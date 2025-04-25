@@ -140,16 +140,29 @@ let tet = 0;
     }
 console.log(tet(3));
 
-*/
+
 
 function checkForFactor (base, factor) {
     return !(base%factor);
   }
+*/
 
-  console.log(checkForFactor(10,2))
-  console.log(checkForFactor(63,7))
-  
-  console.log(checkForFactor(9,2))
-  console.log(checkForFactor(653,7))
+const marks = [10, 2, 8, 4, 6];
 
+
+// 10+2+8+4+6
+const sum2 = marks.reduce((total, n) => total + n);
+console.log(sum2);
+
+// 10-2-8-4-6
+const minus = marks.reduce((total, n) => total - n);
+console.log(minus);
+
+// 0+10+2+8+4+6
+const sum3 = marks.reduce((total, n) => total + n, 0);
+console.log(sum3);
+
+// 0-10-2-8-4-6
+const minus2 = marks.reduce((total, n) => total - n, 0);
+console.log(minus2);
 

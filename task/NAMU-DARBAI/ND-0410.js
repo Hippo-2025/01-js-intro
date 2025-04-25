@@ -23,8 +23,7 @@ function game (val) {
     } else if (val == mass[2] && rand === mass[1]) {
         winner = 1;
     }
-    console.log('winner is ' + winner);
-       
+           
     return winner;
 }
 
@@ -32,5 +31,20 @@ function game (val) {
 let ats = game('akmuo')
 
 console.log((ats) === 2 ? 'Its a tie' : ats=== 0 ? 'Winner is comp' : 'Winner is a player' );
+
+// //2 užd Parašykite funkcija, kuri parodytų kiek žmonių reikia norint pakelti tam tikro svorio krovinį, kai vienas žmogus gali pakelti x kg. Pvz: 10kg svorį turi kelti 5 žmonės, jei vienas jų gali pakelti 2.4 kg
+
+function kiekzm (masse, svr) {
+    let kiek = Math.ceil(masse / svr);
+    return kiek;
+}
+
+console.log(kiekzm(10,2.4));
+console.log(kiekzm(10,3));
+console.log(kiekzm(10,5));
+
+
+
+
 
 

@@ -43,6 +43,20 @@ console.log(kiekzm(10,2.4));
 console.log(kiekzm(10,3));
 console.log(kiekzm(10,5));
 
+//3 užd a) Statybos. Yra planuojamas namo statymas. Parašykite funkciją, kuri, gavusi norimą namo aukštį, grąžintų kiek aukštų turės namas. Namo aukštis yra paduodamas tik sveiku skaičiumi. Vieno aukšto aukštis gali būti 2 arbe 2.5m aukščio. Vadinasi, 6 metrų namas turės 3 aukštus (po 2 m), o 5 metrų namas turės 2 aukštus (po 2.5). Taupant vietą yra dedamas prioritetas didesniam aukštų skaičiui - jei namo aukštis yra 10 metrų, jis turės 5 2m aukštus. Jei namas yra 7 metrų aukščio, jis turės 2 aukštus 2.5 aukščio ir vieną 2 metrų aukščio aukštą.
+
+function aukstusk (metru) {
+    let kiek = 0;
+    if (metru % 2 === 0) {
+        kiek = metru / 2;
+    } else kiek = (metru - 5) / 2 + 2;
+ 
+    return kiek;
+}
+
+console.log(aukstusk(7));
+console.log(aukstusk(10));
+console.log(aukstusk(13));
 
 
 

@@ -58,6 +58,16 @@ console.log(aukstusk(7));
 console.log(aukstusk(10));
 console.log(aukstusk(13));
 
+//uzd 3 b) Statome namą iš plytų. Vienos plytos plotis yra 0.2 metrai, o aukštis yra 0.1 metro. Parašykite funkciją, kuriai nurodžius namo išmatavimus (plotis, ilgis, aukštis), ji apskaičiuotų kiek plytų reikės dėti. (PVZ jei ilgis yra 1m, plotis 2m aukštis yra 2m, turime dėti 600 plytų)
+
+function kiekpl (plot, ilgis, auks) {
+
+    return (plot/0.2 * ilgis*3 * auks/0.1)
+}
+
+console.log(kiekpl(2,2,4));
+
+
 
 
 
